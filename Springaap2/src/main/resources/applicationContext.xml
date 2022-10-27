@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="b" class="com.masai.Bike"/>
+        <bean id="c" class="com.masai.Car"/>
+        <bean id="t" class="com.masai.Travel">
+         <property name="v" ref="b"></property>
+         <property name="numberOfPassenger" value="5"></property>
+        </bean>
+        
+        
+        
+</beans>
